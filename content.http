@@ -1,0 +1,56 @@
+### forma powershell del POST
+### iwr -UseBasicParsing http://... -ContentType "application/json" -Method POST -Body $...
+
+### todo el contenido
+GET http://localhost:8080/api/content
+
+### "content" por id
+GET http://localhost:8080/api/content
+
+### crear nuevo "content"
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Mi 2do Post",
+    "description": "Mi segundo posteo en el blog",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-02-13T10:25:02.838496",
+    "dateUpdated": null,
+    "url" : ""
+}
+
+### actualizar existente "content"
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "MI POSTEO",
+    "description": "(editado)Mi primer posteo",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-08-29T14:25:20",
+    "dateUpdated": "2023-08-29T16:50:16.2214106",
+    "url" : "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT"
+}
+
+### actualizar con id erroneo
+PUT http://localhost:8080/api/content/99
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "MI POSTEO",
+    "description": "(editado)Mi primer posteo",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-08-29T14:25:20",
+    "dateUpdated": "2023-08-29T16:50:16.2214106",
+    "url" : "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT"
+}
+
+### boletear
+DELETE http://localhost:8080/api/content/2

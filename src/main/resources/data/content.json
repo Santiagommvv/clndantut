@@ -1,0 +1,52 @@
+[
+  {
+    "id": null,
+    "title": "CommandLineRunner Course",
+    "description": "Un curso para empezar a usar la clase CommandLineRunner de Spring",
+    "status": "IN_PROGRESS",
+    "contentType": "VIDEO",
+    "dateCreated": "2017-09-30T01:09:00.000000",
+    "dateUpdated": null,
+    "url": "https://www.youtube.com/watch?v=gBN8x4yN5Ks"
+  },
+  {
+    "id": null,
+    "title": "Database Migrations with Flyway",
+    "description": "Un artículo de Eugene Paraschiv, campeón Java",
+    "status": "IN_PROGRESS",
+    "contentType": "ARTICLE",
+    "dateCreated": "2022-10-15T22:11:00.000000",
+    "dateUpdated": null,
+    "url": "https://www.baeldung.com/database-migrations-with-flyway"
+  },
+  {
+    "id": null,
+    "title": "Spring Boot 3 Crash Course",
+    "description": "Curso de Sprng Boot de Dan Vega, cuyo aprendizaje vuelco en este material",
+    "status": "PUBLISHED",
+    "contentType": "COURSE",
+    "dateCreated": "2023-01-23T10:00:00.000000",
+    "dateUpdated": null,
+    "url": "https://www.youtube.com/watch?v=UgX5lgv4uVM"
+  },
+  {
+    "id": null,
+    "title": "Killing creativity",
+    "description": "charla TED de Ken Robinson sobre el sistema educativo",
+    "status": "COMPLETED",
+    "contentType": "CONFERENCE_TALK",
+    "dateCreated": "2010-07-20T20:20:00.000000",
+    "dateUpdated": null,
+    "url": "https://www.youtube.com/watch?v=XSu38uFEVuI"
+  },
+  {
+    "id": null,
+    "title": "Beethoven op.53 ",
+    "description": "La famosa sonata Waldstein, interpretada por Mikhail Pletnev. Un elissir",
+    "status": "COMPLETED",
+    "contentType": "VIDEO",
+    "dateCreated": "2014-02-13T02:34:00.000000",
+    "dateUpdated": null,
+    "url": "https://www.youtube.com/watch?v=lbblMw6k1cU"
+  }
+]
