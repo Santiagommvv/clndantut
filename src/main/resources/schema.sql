@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS Content (
     content_type VARCHAR(50) NOT NULL,
     date_created TIMESTAMP NOT NULL,
     date_updated TIMESTAMP,
-    url VARCHAR(255),
+    url VARCHAR(255)
 );
 
 --enh2--

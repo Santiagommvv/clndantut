@@ -14,8 +14,8 @@ import org.springframework.context.annotation.Bean;
 import java.time.LocalDateTime;
 import java.time.Month;
 
-@EnableConfigurationProperties(ContentCalendarProperties.class)
 @SpringBootApplication
+@EnableConfigurationProperties(ContentCalendarProperties.class)
 public class ClndantutApplication {
 
 	public static void main(String[] args) {

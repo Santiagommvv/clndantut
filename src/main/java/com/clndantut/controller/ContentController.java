@@ -11,9 +11,9 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
+/*@CrossOrigin por defecto permite todas*/
 @RestController
 @RequestMapping("/api/content")
-@CrossOrigin /*por defecto permite todas*/
 public class ContentController {
      private final ContentRepository repository;
 

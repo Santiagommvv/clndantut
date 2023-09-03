@@ -15,7 +15,6 @@ import java.util.List;
 //@Controller /*como es functional interface puede ser targeteada con una lambda,
 // por eso lo hace a nivel raíz en vez que en una clase especializada*/
 
-@Profile("dev")
 @Component
 public class DevDataLoader implements CommandLineRunner {
 
@@ -29,18 +28,7 @@ public class DevDataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println();
-        System.out.println();
-        System.out.println("saludo desde **** dev profile");
-        System.out.println("saludo desde ******** dev profile");
-        System.out.println("saludo desde ************ dev profile");
-        System.out.println("saludo desde **************** dev profile");
-        System.out.println("saludo desde ******************** dev profile");
-        System.out.println("saludo desde ************************ dev profile");
-        System.out.println("saludo desde **************************** dev profile");
-        System.out.println("saludo desde ******************************** dev profile");
-        System.out.println();
-        System.out.println();
+
         try(InputStream inputStream = TypeReference.class.getResourceAsStream("/data/content.json")){
             repository.saveAll(objectMapper.readValue(inputStream, new TypeReference<List<Content>>(){}));
         }

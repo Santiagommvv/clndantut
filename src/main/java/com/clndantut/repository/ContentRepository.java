@@ -14,12 +14,13 @@ import java.util.List;
 // Spring se encarga de convertir esta interface en una implementación directamente
 public interface ContentRepository extends ListCrudRepository<Content, Integer> {
 
-    List<Content> findAllByTitleContains(String keyword);
+    /*List<Content> findAllByTitleContains(String keyword);
 
     @Query("""
             SELECT * FROM Content
             WHERE status = :status
             """)
     List<Content> listByStatus(@Param("status") Status status);
-
+*/
+    List<Content> findAllByContentType(String type);
 }
