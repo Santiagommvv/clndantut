@@ -54,7 +54,12 @@ public class ContentController {
         repository.deleteById(id);
     }
 
-    //busqueda todas cumplan con keyword, diferentes maneras de definir en interface que extiende ListCrudRepo
+    @GetMapping("/filter/type/{type}")
+    public List<Content> filterByType(@PathVariable String type) {
+        return repository.findAllByContentType(type.toUpperCase());
+    }
+
+    /*
     @GetMapping("/filter/{keyword}")
     public List<Content> findByTitle(@PathVariable String keyword){
         return repository.findAllByTitleContains(keyword);
@@ -63,5 +68,5 @@ public class ContentController {
     @GetMapping("/filter/status/{status}")
     public List<Content> findByStatus(@PathVariable Status status){
         return repository.listByStatus(status);
-    }
+    }*/
 }
