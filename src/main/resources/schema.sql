@@ -13,7 +13,5 @@ CREATE TABLE IF NOT EXISTS Content (
 --id INTEGER AUTO_INCREMENT,--
 --INSERT INTO Content(title,description,status,content_type,date_created)--
 --VALUES('Mi posteo de arte','sobre el arte de postear','IDEA','ARTICLE', CURRENT_TIMESTAMP());--
---INSERT INTO Content(title,description,status,content_type,date_created)--
---VALUES('Otro posteo de arte','sobre el mismo arte de postear que el anterior','IDEA','ARTICLE', CURRENT_TIMESTAMP());--
 --enh2 termina en--
 --primary key (id)--
